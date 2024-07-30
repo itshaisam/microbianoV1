@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-[#F5E9F0CC] text-white px-4 py-2">
+        <nav className="bg-[#F5E9F0CC] text-white px-4 py-2 relative">
             <div className='container mx-auto'>
                 <div className="hidden md:flex justify-between items-center text-[#262626] py-2">
                     <div className="flex items-center space-x-2">
@@ -70,17 +70,17 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="lg:hidden absolute top-14 left-0 w-full bg-[#9b5d81cc] text-white flex flex-col space-y-2 p-4">
-                    <Link to="/" className={`block py-2 ${getLinkClasses('/')}`} onClick={() => handleLinkClick('/')}>Home</Link>
-                    <Link to="/about" className={`block py-2 ${getLinkClasses('/about')}`} onClick={() => handleLinkClick('/about')}>About Us</Link>
-                    <Link to="/shop" className={`block py-2 ${getLinkClasses('/shop')}`} onClick={() => handleLinkClick('/shop')}>Shop</Link>
-                    <Link to="/blog" className={`block py-2 ${getLinkClasses('/blog')}`} onClick={() => handleLinkClick('/blog')}>Blog</Link>
-                    <Link to="/contact" className={`block py-2 ${getLinkClasses('/contact')}`} onClick={() => handleLinkClick('/contact')}>Contact Us</Link>
-                    <div className="flex items-center text-[#262626] space-x-1">
+                <div className="lg:hidden absolute top-14 left-0 w-full bg-[#472338cc] text-white flex flex-col space-y-2 p-4" >
+                    <Link to="/" className={`block text-white text-center py-2 ${getLinkClasses('/')}`} onClick={() => handleLinkClick('/')}>Home</Link>
+                    <Link to="/about" className={`block text-white text-center py-2 ${getLinkClasses('/about')}`} onClick={() => handleLinkClick('/about')}>About Us</Link>
+                    <Link to="/shop" className={`block text-white text-center py-2 ${getLinkClasses('/shop')}`} onClick={() => handleLinkClick('/shop')}>Shop</Link>
+                    <Link to="/blog" className={`block text-white text-center py-2 ${getLinkClasses('/blog')}`} onClick={() => handleLinkClick('/blog')}>Blog</Link>
+                    <Link to="/contact" className={`block text-white text-center py-2 ${getLinkClasses('/contact')}`} onClick={() => handleLinkClick('/contact')}>Contact Us</Link>
+                    <div className="flex items-center justify-center text-white text-center space-x-1">
                         <span>Search</span>
                         <FaSearch />
                     </div>
-                    <div className="flex items-center text-[#262626] space-x-1">
+                    <div className="flex items-center justify-center text-white text-center space-x-1">
                         <span>Cart</span>
                         <FaShoppingCart />
                     </div>

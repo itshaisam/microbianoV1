@@ -45,7 +45,7 @@ const Navbar = () => {
                 <div className="hidden lg:flex space-x-8">
                     <Link to="/" className={getLinkClasses('/')} onClick={() => handleLinkClick('/')}>Home</Link>
                     <Link to="/about" className={getLinkClasses('/about')} onClick={() => handleLinkClick('/about')}>About Us</Link>
-                    <Link to="/product" className={getLinkClasses('/product')} onClick={() => handleLinkClick('/product')}>Shop</Link>
+                    <Link to="/shop" className={getLinkClasses('/shop')} onClick={() => handleLinkClick('/shop')}>Shop</Link>
                     <Link to="/blog" className={getLinkClasses('/blog')} onClick={() => handleLinkClick('/blog')}>Blog</Link>
                     <Link to="/contact" className={getLinkClasses('/contact')} onClick={() => handleLinkClick('/contact')}>Contact Us</Link>
                 </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                 <div className="lg:hidden absolute top-14 left-0 w-full bg-[#9b5d81cc] text-white flex flex-col space-y-2 p-4">
                     <Link to="/" className={`block py-2 ${getLinkClasses('/')}`} onClick={() => handleLinkClick('/')}>Home</Link>
                     <Link to="/about" className={`block py-2 ${getLinkClasses('/about')}`} onClick={() => handleLinkClick('/about')}>About Us</Link>
-                    <Link to="/product" className={`block py-2 ${getLinkClasses('/product')}`} onClick={() => handleLinkClick('/product')}>Shop</Link>
+                    <Link to="/shop" className={`block py-2 ${getLinkClasses('/shop')}`} onClick={() => handleLinkClick('/shop')}>Shop</Link>
                     <Link to="/blog" className={`block py-2 ${getLinkClasses('/blog')}`} onClick={() => handleLinkClick('/blog')}>Blog</Link>
                     <Link to="/contact" className={`block py-2 ${getLinkClasses('/contact')}`} onClick={() => handleLinkClick('/contact')}>Contact Us</Link>
                     <div className="flex items-center text-[#262626] space-x-1">

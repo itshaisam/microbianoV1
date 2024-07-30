@@ -14,7 +14,7 @@ const About = () => {
 
                         <h1 className='text-4xl font-medium mb-4'>About Us</h1>
                         <div className='mb-4 flex justify-center flex-col'>
-                            <img src={orangeimage} />
+                            <img src={orangeimage} className='w-44' />
                         </div>
                         <p className='mb-4 text-xl'>
                             Safecare Industries located in KEZAD- Abu Dhabi with fully automated manufacturing facilities specialized in manufacturing and supplying an extensive range of Microbiological Pre-poured Culture Media (PPM), Pre-poured Tubed Media and Bottle Media. All operational functions adhere to the required industry compliance criteria.
